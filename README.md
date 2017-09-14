@@ -6,3 +6,8 @@
 
 backend for portalen
 
+## License
+
+[MIT](LICENSE)
+
+![Robohash image of micro-portalen-api](https://robots.kebabstudios.party/micro-portalen-api.png "Robohash image of micro-portalen-api")

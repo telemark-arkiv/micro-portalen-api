@@ -7,6 +7,7 @@ const shortcuts = require('./handlers/shortcuts')
 const links = require('./handlers/links')
 const roles = require('./handlers/roles')
 const content = require('./handlers/content')
+const frontpage = require('./handlers/frontpage')
 
 module.exports = router(
   get('/hello/:who', hello),
@@ -15,5 +16,6 @@ module.exports = router(
   get('/links', links),
   get('/roles/map', roles),
   get('/roles/list', roles),
-  get('/content', content)
+  get('/content', content),
+  get('/', frontpage)
 )

@@ -2,13 +2,16 @@
   "name": "micro-portalen-api",
   "version": "1.0.0",
   "description": "portalen api",
+  "license": "MIT",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "micro",
     "dev": "micro-dev -H localhost",
     "test": "standard && nsp check && ava",
     "coverage": "nyc ava",
-    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls"
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -24,26 +27,36 @@
     "email": "jonas.enge@gmail.com",
     "url": "https://github.com/maccyber"
   },
-  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
+  "engines": {
+    "node": ">=8.5.0"
+  },
   "bugs": {
     "url": "https://github.com/telemark/micro-portalen-api/issues"
   },
   "homepage": "https://github.com/telemark/micro-portalen-api#readme",
   "devDependencies": {
-    "ava": "^0.22.0",
-    "coveralls": "^2.13.1",
-    "micro-dev": "^1.2.3",
-    "nsp": "^2.6.3",
-    "nyc": "^11.0.3",
-    "standard": "^10.0.2",
-    "test-listen": "^1.0.2"
+    "ava": "0.22.0",
+    "coveralls": "2.13.1",
+    "micro-dev": "1.2.3",
+    "nsp": "2.6.3",
+    "nyc": "11.0.3",
+    "standard": "10.0.2",
+    "test-listen": "1.0.2"
   },
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1",
-    "micro": "^9.0.0",
-    "micro-jwt-auth": "^1.9.0",
-    "microrouter": "^2.2.2",
-    "winston": "^2.3.1",
-    "winston-papertrail": "^1.0.5"
+    "axios": "0.16.2",
+    "marked": "0.3.6",
+    "micro": "9.0.0",
+    "micro-jwt-auth": "1.9.0",
+    "microrouter": "2.2.2",
+    "winston": "2.3.1",
+    "winston-papertrail": "1.0.5"
   }
 }
