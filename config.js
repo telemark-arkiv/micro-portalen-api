@@ -1,5 +1,9 @@
 module.exports = {
   jwtSecret: process.env.API_JWT_SECRET || 'Louie Louie, oh no, I got to go Louie Louie, oh no, I got to go',
+  tokenOptions: {
+    expiresIn: '1h',
+    issuer: 'https://auth.t-fk.no'
+  },
   url: {
     shortcuts: process.env.URL_SHORTCUTS || 'https://shortcuts.portalen.win',
     roles: process.env.URL_ROLES || 'https://roles.portalen.win',
