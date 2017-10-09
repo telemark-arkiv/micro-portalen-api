@@ -57,7 +57,7 @@
     "micro": "9.0.0",
     "micro-jwt-auth": "1.9.0",
     "microrouter": "2.2.3",
-    "winston": "2.3.1",
+    "winston": "3.0.0-rc0",
     "winston-papertrail": "1.0.5"
   }
 }
