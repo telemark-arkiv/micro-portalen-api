@@ -45,7 +45,7 @@
     "ava": "0.25.0",
     "coveralls": "3.0.0",
     "nsp": "3.2.1",
-    "micro-dev": "2.1.1",
+    "micro-dev": "2.2.0",
     "nyc": "11.4.1",
     "standard": "10.0.2",
     "test-listen": "1.1.0"
@@ -53,8 +53,8 @@
   "dependencies": {
     "axios": "0.17.1",
     "jsonwebtoken": "^8.0.1",
-    "marked": "0.3.9",
-    "micro": "9.0.2",
+    "marked": "0.3.12",
+    "micro": "9.1.0",
     "micro-jwt-auth": "1.9.0",
     "microrouter": "3.0.0",
     "winston": "3.0.0-rc0",
